@@ -1,0 +1,31 @@
+.select-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.select-box select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid rgb(200, 200, 200);
+    margin: 10px 0;
+    padding: 0 14px;
+    color: rgb(33, 43, 54);
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.select-box select:hover {
+    border: 1px solid black;
+}
+
+.select-box select:focus {
+    outline: none;
+    border: 1px solid rgba(32, 101, 209, 0.8);
+    transition: 0.3s;
+    box-shadow: 0 0 2px 1px rgba(32, 101, 209, 0.8);
+}

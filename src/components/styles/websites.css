@@ -1,0 +1,546 @@
+:root {
+    --main-color: rgb(33, 43, 54);
+    --main-background-button: rgb(32, 101, 209);
+    --main-hover: rgb(16, 57, 150);
+}
+
+#Websites .container,
+#EditWebsite .container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#Websites .container form select option {
+    color: black;
+}
+
+#Websites form button,
+#EditWebsite .container form button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background: var(--main-background-button);
+    color: white;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 0 auto;
+    border: none;
+}
+
+#Websites form button:hover,
+#EditWebsite .container form button:hover {
+    cursor: pointer;
+    background-color: var(--main-hover);
+}
+
+#Websites form {
+    width: 100%;
+    /* max-width: 320px; */
+}
+
+#Websites .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Websites .container .websites-form,
+#EditWebsite .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#Websites form div,
+#EditWebsite form div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Websites .websites-form h1 {
+    padding: 30px 0;
+    margin: 0 10px;
+}
+
+#Websites .success-message,
+#EditWebsite .success-message {
+    width: 100%;
+    max-width: 400px;
+    background: rgb(76, 175, 80);
+    padding: 14px 0;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+#Websites .success-message p,
+#EditWebsite .success-message p {
+    text-align: center;
+    color: white;
+}
+/* **********************************************************************************
+                                LIST
+********************************************************************************** */
+
+#WebsitesList .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+#WebsitesList table {
+    width: 100%;
+}
+
+#WebsitesList table tbody td button,
+#WebsitesList table tbody td a {
+    border: none;
+    background: transparent;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#WebsitesList table tbody td .edit-button {
+    color: rgb(255, 163, 25) !important;
+    vertical-align: middle;
+}
+
+#WebsitesList table tbody td button:last-child {
+    color: rgb(255, 25, 67);
+}
+
+#WebsitesList table tbody td .edit-button:hover {
+    background: rgba(255, 163, 25, 0.2);
+    cursor: pointer;
+}
+
+#WebsitesList table tbody td button:not(.edit-button):last-child:hover {
+    background: rgba(255, 25, 67, 0.2);
+    cursor: pointer;
+}
+
+#WebsitesList .add-button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    background: rgb(25, 118, 210);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+#WebsitesList .add-button:hover {
+    background: rgba(25, 118, 210, 0.8);
+}
+
+
+#WebsitesList .card-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#WebsitesList .card-buttons button {
+    display: block;
+    border: none;
+    background: transparent;
+    width: 100%;
+    max-width: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+#WebsitesList .card-buttons button p {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#WebsitesList .card-buttons button:first-child p {
+    background-color: rgba(24, 144, 255, 0.16);
+    color: rgb(12, 83, 183);
+}
+
+#WebsitesList .card-buttons button:last-child p {
+    background: rgba(255, 72, 66, 0.16);
+    color: rgb(183, 33, 54);
+}
+
+#WebsitesList .card-buttons button:nth-child(2) p {
+    background: rgba(84, 214, 44, 0.16);
+    color: rgb(34, 154, 22);
+}
+
+#WebsitesList .card-buttons button:hover {
+    cursor: pointer;
+    background: rgba(145, 158, 171, 0.2);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#WebsitesList .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 0 auto;
+}
+
+#WebsitesList .list div {
+    display: flex;
+    align-items: center;
+}
+
+#WebsitesList .list div input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 60px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(33, 43, 54);
+    margin: 0 10px;
+    padding: 0 4px;
+}
+
+#WebsitesList .list div input:hover {
+    border: 1px solid black;
+}
+
+#WebsitesList .list input:focus {
+    outline: none;
+    border: 1px solid rgba(32, 101, 209, 0.8);
+    transition: 0.3s;
+    box-shadow: 0 0 2px 1px rgba(32, 101, 209, 0.8);
+}
+#WebsitesList .list button {
+    background: transparent;
+    border: none;
+    color: rgb(12, 83, 183);
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#WebsitesList .list button:hover {
+    cursor: pointer;
+    background: rgba(12, 83, 183, 0.1);
+}
+
+#WebsitesList .search-container {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+#WebsitesList div .search-container input {
+    width: 100%;
+    max-width: 100% !important;
+    height: 40px;
+    padding: 0 10px;
+}
+
+#WebsitesList .search-container svg {
+    position: absolute;
+    right: 20px;
+}
+
+/* **********************************************************************************
+                                CARD
+********************************************************************************** */
+
+#WebsiteCard .active-item,
+#WebsiteCard .inactive-item {
+    padding: 4.5px 9px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+#WebsiteCard .active-item {
+    background-color: rgba(87, 202, 34, 0.1);
+    color: rgb(34, 154, 22);
+}
+
+#WebsiteCard .inactive-item {
+        background: rgba(255, 25, 67, 0.1);
+    color: rgb(255, 25, 67);
+}
+
+#WebsiteCard .item-image {
+    width: 100%;
+    max-width: 100px;
+}
+
+#WebsiteCard table thead td {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+}
+
+#WebsiteCard  table tr {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+#WebsiteCard table tbody tr:hover {
+    background: rgba(145, 158, 171, 0.08);
+}
+
+#WebsiteCard table .item-title:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+#WebsiteCard table .item-title {
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+#WebsiteCard table {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 43, 54);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-image: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+    border-radius: 16px;
+    z-index: 0;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+#WebsiteCard thead {
+    background-color: rgba(145, 158, 171, 0.08);
+}
+
+#WebsiteCard tbody tr td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#WebsiteCard table td {
+    padding: 10px 60px 10px 20px;
+}
+
+#WebsiteCard table tbody td:first-child a:last-child {
+    color: rgb(12, 124, 213);
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+#WebsiteCard table tbody td:first-child a:last-child:hover {
+    background: rgba(12, 124, 213, 0.1);
+    transition: 0.3s;
+}
+/* **********************************************************************************
+                                DETAILS
+********************************************************************************** */
+#WebsiteDetails {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: var(--main-color);
+}
+
+#WebsiteDetails div.container {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 43, 54);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-image: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+#WebsiteDetails .website-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(145, 158, 171, 0.24);
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+
+#WebsiteDetails .website-info p:first-child {
+    font-weight: 600;
+}
+
+#WebsiteDetails .top-details h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#WebsiteDetails .top-details p {
+    font-size: 20px;
+}
+
+#WebsiteDetails .website-info button {
+    border: none;
+    background: transparent;
+    color: var(--main-color);
+    padding: 8px;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+#WebsiteDetails .website-info button:hover {
+    background: rgba(145, 158, 171, 0.2);
+    cursor: pointer;
+}
+
+#WebsiteDetails .website-info p.website-info-p {
+    font-weight: 400;
+    display: inline;
+}
+
+#WebsiteDetails .item-image {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+}
+
+#WebsiteDetails .top-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#WebsiteDetails p {
+    display: flex;
+    align-items:  center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+#WebsiteDetails a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+#WebsiteDetails a:hover {
+    text-decoration: underline;
+}
+
+#WebsiteDetails .back-button,
+#EditWebsite .back-button {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    color: var(--main-background-button);
+    font-weight: 500;
+    padding: 10px 6px 10px 0;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin: 20px;
+    text-decoration: none;
+}
+
+#WebsiteDetails .back-button svg {
+    margin: 0 6px;
+}
+
+#WebsiteDetails .back-button:hover,
+#EditWebsite .back-button:hover {
+    text-decoration: none;
+    background: rgba(16, 57, 150, 0.2);
+}
+
+/***********************************************************************************
+                                MODAL
+********************************************************************************** */
+
+#delete-modal svg {
+    color:rgb(255, 25, 67);
+    font-size: 60px;
+    margin: 0 auto;
+    display: block;
+    background: rgba(255, 25, 67, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+#delete-modal h2 {
+    font-size: 25px;
+    color: rgb(34, 51, 84);
+    margin: 20px 0 0 0;
+    font-weight: 500;
+}
+
+#delete-modal p {
+    color: rgba(34, 51, 84, 0.7);
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+#delete-modal .modal-buttons button {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+#delete-modal .modal-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#delete-modal .modal-buttons button:first-child {
+    background: rgb(255, 25, 67);
+    color: white;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+#delete-modal .modal-buttons button:first-child:hover {
+    background: rgb(204, 20, 53);
+    cursor: pointer;
+}
+#delete-modal .modal-buttons button:last-child {
+    background: transparent;
+    color: rgb(85, 105, 255);
+    transition: 0.3s;
+}
+
+#delete-modal .modal-buttons button:last-child:hover {
+    background: rgba(85, 105, 255, 0.1);
+    cursor: pointer;
+}
